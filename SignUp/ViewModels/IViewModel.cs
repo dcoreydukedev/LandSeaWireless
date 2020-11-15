@@ -13,4 +13,9 @@ namespace SignUp.ViewModels
     public interface IViewModel
     {
     }
+
+    public interface ISignupFormViewModel : IViewModel
+    {
+
+    }
 }

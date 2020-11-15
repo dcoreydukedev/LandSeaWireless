@@ -49,20 +49,13 @@ using FormHelper;
 #nullable disable
 #nullable restore
 #line 8 "C:\Users\DCoreyDuke\source\repos\LandSeaWireless\SignUp\Views\_ViewImports.cshtml"
-using DCoreyDuke.CodeBase;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 9 "C:\Users\DCoreyDuke\source\repos\LandSeaWireless\SignUp\Views\_ViewImports.cshtml"
-using DCoreyDuke.CodeBase.Objects.General;
+using LandSeaWireless.Models.Domain;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f38b505e5e65837dbc6b4b945888e9506b7a7fa", @"/Views/Shared/_Footer.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8c54b705646dd3d1dcbcc30635354954d55a2888", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bdc4ea5362a39e383b0c9278c475d9588471c729", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Footer : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -93,7 +86,7 @@ using DCoreyDuke.CodeBase.Objects.General;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<footer class=\"border-top footer text-muted\">\r\n    <div class=\"container\">\r\n        &copy; 2020 - LandSeaWireless.com - ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f38b505e5e65837dbc6b4b945888e9506b7a7fa5052", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f38b505e5e65837dbc6b4b945888e9506b7a7fa4856", async() => {
                 WriteLiteral("Privacy");
             }
             );

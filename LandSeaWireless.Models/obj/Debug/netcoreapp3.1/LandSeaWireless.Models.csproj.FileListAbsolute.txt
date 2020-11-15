@@ -1,0 +1,9 @@
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.csprojAssemblyReference.cache
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.AssemblyInfoInputs.cache
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.AssemblyInfo.cs
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.csproj.CoreCompileInputs.cache
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\bin\Debug\netcoreapp3.1\LandSeaWireless.Models.deps.json
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\bin\Debug\netcoreapp3.1\LandSeaWireless.Models.dll
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\bin\Debug\netcoreapp3.1\LandSeaWireless.Models.pdb
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.dll
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.Models\obj\Debug\netcoreapp3.1\LandSeaWireless.Models.pdb

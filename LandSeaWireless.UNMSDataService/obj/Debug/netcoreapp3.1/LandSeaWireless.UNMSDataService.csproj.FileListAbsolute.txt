@@ -1,0 +1,12 @@
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\bin\Debug\netcoreapp3.1\LandSeaWireless.Models.dll
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.csprojAssemblyReference.cache
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.AssemblyInfoInputs.cache
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.AssemblyInfo.cs
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\bin\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.deps.json
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\bin\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.dll
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\bin\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.pdb
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\bin\Debug\netcoreapp3.1\LandSeaWireless.Models.pdb
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.csproj.CopyComplete
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.dll
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.pdb
+C:\Users\DCoreyDuke\source\repos\LandSeaWireless\LandSeaWireless.UNMSDataService\obj\Debug\netcoreapp3.1\LandSeaWireless.UNMSDataService.csproj.CoreCompileInputs.cache

@@ -1,0 +1,59 @@
+﻿@model ContactInfoViewModel
+<!-- Wizard Step 3: Contact Info -->
+<fieldset id="wizard_step_3" class="container wizard_step">
+    <!-- Wizard Step Title Container -->
+    <header class="row wizard_step_title_container">
+        <!-- Wizard Step Title -->
+        <h2 class="col-10 offset-2 wizard_step_title">
+            Step 3: Provide Contact Info
+        </h2>
+    </header>
+    <!-- Wizard Step Content Container -->
+    <div class="row wizard_step_content_container">
+        <!-- Wizard Step Content -->
+        <fieldset class="col-10 offset-2 wizard_step_content">
+            <div class="form-group row">
+                <label for="txtFirstName" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtFirstName" placeholder="John" asp-for="FirstName" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtLastName" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtLastName" placeholder="Doe" asp-for="LastName" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="yourname@domain.com" asp-for="Email" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtPhone" class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPhone" placeholder="(123) 456-7890" asp-for="Phone" />
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <!-- Wizard Step Navigation Container -->
+    <footer class="row wizard_step_navigation_container">
+        <!-- Wizard Step Navigation -->
+        <nav class="col-10 offset-2 wizard_step_navigation">
+
+            <a id="wizard_step_3_nav_prev" class="wizard_step_nav wizard_step_nav_prev" href="#">
+                << Prev
+            </a>
+
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+
+            <a id="wizard_step_3_nav_next" class="wizard_step_nav wizard_step_nav_next" href="#">
+                Next >>
+            </a>
+
+        </nav>
+    </footer>
+</fieldset>
+<!-- End Wizard Step -->
