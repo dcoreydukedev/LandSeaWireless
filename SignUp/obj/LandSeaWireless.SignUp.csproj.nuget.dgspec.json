@@ -186,13 +186,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "FormHelper": {
+            "Microsoft.TypeScript.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.3, )"
-            },
-            "RestSharp": {
-              "target": "Package",
-              "version": "[106.11.7, )"
+              "version": "[4.0.3, )"
             },
             "System.Text.Json": {
               "target": "Package",

@@ -8,14 +8,6 @@ using System.ComponentModel.DataAnnotations;
 namespace SignUp.ViewModels
 {
 
-
-    public class UserAccountViewModel : ISignupFormViewModel
-    {
-        public string Username { get; set; }
-
-        public string Password { get; set; }
-    }
-
     public class ClientTypeViewModel : ISignupFormViewModel
     {
         /// <summary>
@@ -100,7 +92,6 @@ namespace SignUp.ViewModels
     public class SignUpFormViewModel : IViewModel
     {
        
-        public UserAccountViewModel UserAccount { get; set; }
         public ClientTypeViewModel ClientType { get; set; }
         public ContactInfoViewModel ContactInfo { get; set; }
         public CompanyContactInfoViewModel CompanyContactInfo { get; set; }

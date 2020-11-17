@@ -16,13 +16,7 @@ namespace SignUp.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IActionResult UserAccount()
-        {
-            UserAccountViewModel vm = new UserAccountViewModel();
-
-            return PartialView("~/Views/Home/Signup/_UserAccount.cshtml", vm);
-        }
+      
 
         [HttpGet]
         public IActionResult ClientType()
@@ -49,11 +43,11 @@ namespace SignUp.Controllers
         }
 
         [HttpGet]
-        public IActionResult InstallationAddress()
+        public IActionResult InstallAddress()
         {
             InstallationAddressViewModel vm = new InstallationAddressViewModel();
 
-            return PartialView("~/Views/Home/Signup/_InstallationAddress.cshtml", vm);
+            return PartialView("~/Views/Home/Signup/_InstallAddress.cshtml", vm);
         }
 
         [HttpGet]

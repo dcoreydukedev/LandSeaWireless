@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandSeaWireless.SignUp", "SignUp\LandSeaWireless.SignUp.csproj", "{40D560AD-0C03-4A6E-B25A-E8BD8B6795FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandSeaWireless.Models", "LandSeaWireless.Models\LandSeaWireless.Models.csproj", "{1E8718ED-7653-451C-9E9A-111D299590D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandSeaWireless.Models", "LandSeaWireless.Models\LandSeaWireless.Models.csproj", "{1E8718ED-7653-451C-9E9A-111D299590D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandSeaWireless.UNMSDataService", "LandSeaWireless.UNMSDataService\LandSeaWireless.UNMSDataService.csproj", "{82A9D70F-34DD-46DC-9AC4-0439AF02BBF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandSeaWireless.UNMSDataService", "LandSeaWireless.UNMSDataService\LandSeaWireless.UNMSDataService.csproj", "{82A9D70F-34DD-46DC-9AC4-0439AF02BBF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LandSeaWireless.UNMSDataService.Test", "LandSeaWireless.UNMSDataService.Test\LandSeaWireless.UNMSDataService.Test.csproj", "{574C8749-DCE9-4696-A0FE-B3400CFB43C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandSeaWireless.UNMSDataService.Test", "LandSeaWireless.UNMSDataService.Test\LandSeaWireless.UNMSDataService.Test.csproj", "{574C8749-DCE9-4696-A0FE-B3400CFB43C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

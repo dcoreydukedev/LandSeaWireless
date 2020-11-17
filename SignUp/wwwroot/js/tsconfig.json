@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ESNext",
+    "jsx": "react-native",
+    "module": "CommonJS"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "include": [
+    "modules"
+  ],
+  "files": [ "./wizard.ts"]
+}

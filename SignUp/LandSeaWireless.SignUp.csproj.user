@@ -6,4 +6,9 @@
     <ShowAllFiles>true</ShowAllFiles>
     <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Update="wwwroot\js\wizard.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
 </Project>
