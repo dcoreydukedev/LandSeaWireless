@@ -7,7 +7,7 @@
     <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ItemGroup>
-    <TypeScriptCompile Update="wwwroot\js\wizard.ts">
+    <TypeScriptCompile Update="wwwroot\js\wizard\wizard.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

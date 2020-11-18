@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\js\wizard.ts" />
+    <Folder Include="wwwroot\js\wizard\modules\" />
   </ItemGroup>
 
 </Project>
