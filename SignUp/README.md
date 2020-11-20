@@ -121,7 +121,7 @@
 >>
 >-------
 
-> # Section 3: Application
+> # Section 3: Application 
 >> ## Part 1: Definitions
 >>> * **Component**: a functional unit of a User Interface that encapsulates logic and presentation 
 >>> * **Wrapper**: a unit of the User Interface that encapsulates containers; divides the screen into regions 
@@ -130,27 +130,51 @@
 >>> * **Module**: a unit of functionality not rendered on the screen
 >>
 >>-----
->> ## Part 2: UI Layout {Root: Screen}
+>> ## Part 2: UI
+>>> ### **UI Components**
 >>>~~~
->>> ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> |||||||App||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> |||||||||Header|||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> |||||||||Wizard|||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||Wizard Step|||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||||Wizard Step Title|||||||||||||||||||||||||||||||||||||||
->>> ||||||||||||Wizard Step Info||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||||Wizard Step Content|||||||||||||||||||||||||||||||||||||
->>> ||||||||||||Wizard Step Navigation||||||||||||||||||||||||||||||||||
->>> ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> |||||||UI Component|||||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||Wrapper|||||||||||||||||||||||||||||||||||||||||||||||||||||
->>> |||||||||Container||||||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||Elements||||||||||||||||||||||||||||||||||||||||||||||||||
->>> ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+>>> - UI Component
+>>> -- Wrapper
+>>> --- Container
+>>> ---- Elements
+>>> ----------------------
+>>> - UI Layout
+>>> -- (Root: Screen)
+>>> --- App
+>>> ---- Header
+>>> ----- Wizard
+>>> ------ Wizard Step
+>>> ------- Wizard Step Title
+>>> ------- Wizard Step Info
+>>> ------- Wizard Step Content
+>>> ------- Wizard Step Navigation
 >>>~~~
 >>-----
->> ## Part 3: Technology Stack
+>> ## Part 3: Modules
+>>> ### **Models**
+>>>~~~
+>>> - 
+>>> --
+>>> --- 
+>>> ---- 
+>>>~~~
+>> ### **Functions**
+>>>~~~
+>>> - 
+>>> -- 
+>>> --- 
+>>> ---- 
+>>>~~~
+>>-----
+>> ## Part 4: Folder Structure
+>>>~~~
+>>> - 
+>>> -- 
+>>> --- 
+>>> ----
+>>>~~~
+>>-----
+>> ## Part 4: Technology Stack
 >>> * Platform: Node.js
 >>> * Language: TypeScript
 >>> * IDE: Visual Studio Code
