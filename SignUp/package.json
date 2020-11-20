@@ -1,0 +1,82 @@
+{
+  "name": "landseawireless.signup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "customer signup application for landseawireless",
+  "homepage": "http://wwww.landseawireless.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcoreydukedev/LandSeaWireless"
+  },
+  "author": {
+    "name": "dcoreyduke",
+    "email": "dcoreydukedev@gmail.com",
+    "url": "https://github.com/dcoreydukedev"
+  },
+  "dependencies": {
+    "@types/bootstrap": "^5.0.0",
+    "@types/jquery": "^3.5.4",
+    "@types/node": "^12.0.0",
+    "bootstrap": "^4.5.3",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "husky": "^4.3.0",
+    "jquery": "^3.5.1",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.0.3",
+    "url-loader": "^4.1.1",
+    "web-vitals": "^0.2.4",
+    "webpack": "^5.6.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js --watch --progress --profile",
+    "build": "webpack --config webpack.config.js --progress --profile",
+    "prod": "webpack --config webpack.config.js --progress"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+      "additional-rule": "warn"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {
+          "additional-typescript-only-rule": "warn"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "babel-loader": "^8.2.1",
+    "webpack-cli": "^4.2.0"
+  }
+}

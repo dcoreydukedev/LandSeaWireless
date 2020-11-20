@@ -1,0 +1,217 @@
+/* wizard.css - for wizard component styles */
+
+/* ----- Containers ----- */
+
+.wizard_container{
+    width:92%;
+    padding:1rem;        
+    margin:2px auto;
+    background-color:#fcfcfc;
+}
+
+.wizard_step_container{
+    width:98%;
+    padding:.75rem;
+    margin:2px auto;
+    background-color:#fdfdfd;
+}
+
+.wizard_step_title_container {
+    width:98%;
+    padding:.25rem;
+    margin:2px auto;
+    background-color:#fefefe;
+}
+
+.wizard_step_info_container {
+    width:98%;
+    padding:.25rem;
+    margin:2px auto;
+    background-color:#fefefe;
+}
+
+.wizard_step_content_container {
+    width:98%;
+    padding:.25rem;
+    margin:2px auto;
+    background-color:#ffffff;
+}
+
+.wizard_step_navigation_container {
+    width:98%;
+    padding:.25rem;
+    margin:2px auto;
+    background-color:#ffffff;
+}
+
+/* ----- End Containers ----- */
+
+/* ----- Wrappers ----- */
+
+/* -- Defaults for Wizard Components -- */
+.wizard_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgba(5, 5, 5, 0.99);
+    letter-spacing: normal;
+    font-size: 16; /*Set Base Font Size for Wizard (1em = 14) */
+}
+
+/* -- Defaults for Each Step Component -- */
+.wizard_step_wrapper{
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+}
+
+/* -- Defaults for Each Title Component -- */
+.wizard_step_title_wrapper {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: rgba(5, 5, 5, 0.99);
+    letter-spacing: .5rem;
+    font-size: 1.50rem;
+}
+
+/* -- Defaults for Each Info Component -- */
+.wizard_step_info_wrapper {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;    
+    letter-spacing: .25rem;
+}
+
+/* -- Defaults for Each Content Component -- */
+.wizard_step_content_wrapper {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: rgba(5, 5, 5, 0.88);
+    letter-spacing: .125rem;
+    font-size: 1.0rem;
+}
+
+/* -- Defaults for Each Navigation Component -- */
+.wizard_step_navigation_wrapper{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: rgba(5, 5, 5, 0.75);
+    letter-spacing: .25rem;
+    font-size: 1.25rem;
+}
+
+/* ----- End Wrappers ----- */
+
+
+/* ----- Elements ----- */
+
+
+/* ----- Wizard Step Title Elements ----- */
+.wizard_step_title{ /* h2 */
+    width:98%;
+    height:auto;
+    margin:2px auto;
+    padding:2px;
+    text-align:left;
+}
+/* ----- End Wizard Step Title Elements ----- */
+
+/* ----- Wizard Step Info Elements ----- */
+.wizard_step_info_header { /* h2 */
+    width: 98%;
+    text-align: left;
+    margin:.25rem auto;
+    font-size:1.0em;
+    color: rgba(5, 5, 5, 0.92);
+}
+.wizard_step_info_p { /* p */
+    width: 98%;
+    text-align: left;
+    padding-left: 0%;
+    margin: 1%;
+    font-size: 0.85em;
+    color: rgba(5, 5, 5, 0.88);
+}
+/* ----- End Wizard Step Info Elements ----- */
+
+/* ----- Wizard Step Content Elements ----- */
+
+.form-control {
+    margin-bottom: .25rem;
+}
+
+.val {
+    font-size: .67rem;
+    color: rgba(254, 0, 0, 0.75);
+    padding: 1px;
+    margin: .50rem;
+    margin: .50rem 0px;
+    width: 98%;
+    text-align: left;
+}
+
+.info {
+    font-size: .67rem;
+    color: rgba(234, 234, 234, 0.75);
+    padding: 1px;
+    margin: .50rem 0px;
+    width:98%;
+    text-align:left;
+}
+
+.highlight-red {
+    border: 1px solid red !important;
+}
+
+.highlight-yellow {
+    border: 1px solid yellow !important;
+}
+
+/* ----- End Wizard Step Content Elements ----- */
+
+/* ----- Wizard Step Navigation Elements ----- */
+
+.wizard_step_nav, .wizard_step_nav:active, .wizard_step_nav:link, .wizard_step_nav:visited{
+    background: none!important;
+    border:none;
+    padding:0!important;
+    color:rgba(25, 25, 255, 0.97);
+}
+.wizard_step_nav:hover{
+    background: none!important;
+    border:none;
+    padding:0!important;
+    color:silver;
+}
+
+.wizard_step_nav_done, .wizard_step_nav_done:active, .wizard_step_nav_done:link, .wizard_step_nav_done:visited, .wizard_step_nav_done:hover{
+    background: none!important;
+    border:none;
+    padding:0!important;
+    color: rgba(0, 255, 0, 0.98);
+}
+
+/* ----- End Wizard Step Navigation Elements ----- */
+
+/* ----- End Elements ----- */
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
