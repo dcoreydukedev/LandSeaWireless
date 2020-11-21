@@ -28,17 +28,5 @@ export const WizardStepNavigationContainer = () => {
   return <div className="container wizard_step_navigation_container"></div>;
 };
 
-export const WizardStepTitleContainer = () => {
-  return <div className="container wizard_step_title_container"></div>;
-};
 
-export default {
-  AppContainer,
-  HeaderContainer,
-  WizardContainer,
-  WizardStepContainer,
-  WizardStepContentContainer,
-  WizardStepInfoContainer,
-  WizardStepNavigationContainer,
-  WizardStepTitleContainer,
-};
+
