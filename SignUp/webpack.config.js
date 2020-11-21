@@ -1,6 +1,6 @@
 var path = require('path');
-var webpack = require('webpack');
- 
+
+
 module.exports = {
   entry: './src/components/Wizard.tsx',
   module: {
@@ -16,11 +16,14 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   output: {
-    filename: 'bundle.js',
+    filename: 'public/dist/bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   externals: {
      "react": "React",
      "react-dom": "ReactDOM"
    },
+   devServer: {
+     open: true
+   }
 };

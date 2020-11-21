@@ -27,6 +27,3 @@ export const WizardStepInfoContainer = () => {
 export const WizardStepNavigationContainer = () => {
   return <div className="container wizard_step_navigation_container"></div>;
 };
-
-
-

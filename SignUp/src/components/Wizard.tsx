@@ -1,18 +1,22 @@
-import React, {useState} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import * as Types from "./Types";
 
 //#region Types
 
+export interface IWizardProps
+{
+    Id: string
+}
 
-interface TWizardState extends Types.StepState
+export interface TWizardState extends Types.StepState
 {
     Step: number;
 }
 
 //#endregion
 
-class Wizard extends React.Component<any, TWizardState>{
+export class Wizard extends React.Component<IWizardProps, TWizardState>{
     constructor(props) {
         super(props);
         this.nextStep = this.nextStep.bind(this);
@@ -142,4 +146,4 @@ class Wizard extends React.Component<any, TWizardState>{
 // #endregion
 
 
-ReactDOM.render(<Wizard />, document.querySelector('#root'));
+ReactDOM.render(<Wizard Id = "Wizard"/>, document.querySelector('#root'));
