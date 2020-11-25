@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import MainForm from './components/MainForm';
-import { Container } from 'semantic-ui-react';
+import { Container, Row } from 'reactstrap';
 
 export default class App extends Component {
 
     render() {
         return (
-            <Container textAlign='center'>
-                <MainForm />
-            </Container>)
+            <Container fluid={true}>
+                <Container row>
+                    <MainForm />
+                </Container>                
+            </Container>
+        )
     }
 }
 

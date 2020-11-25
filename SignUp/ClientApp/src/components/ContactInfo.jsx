@@ -1,8 +1,9 @@
-// PersonalDetails.jsx
+/* eslint-disable no-unused-vars */
+// @ts-nocheck
 import React, { Component } from "react";
-import { Form, Button} from "semantic-ui-react";
 import { ContactInfoPerson, ContactInfoCompany } from "../modules/Steps.js";
 import { Wizard, WizardStep, WizardStepNav } from "./Wizard";
+import { Button, Form, FormGroup, Label, Input, FormText, Col, Row, Container } from 'reactstrap';
 
 export class ContactInfo extends Component {
   saveAndContinue = (e) => {
@@ -23,34 +24,36 @@ export class ContactInfo extends Component {
         {clientType === 'person' &&
         <WizardStep Title = {ContactInfoPerson.Title} Header = {ContactInfoPerson.Header} Text = {ContactInfoPerson.Text}>
             <Form>                
-                <Form.Field>
+                    <FormGroup>
+                     <Row>
                     <label>First Name</label>
                     <input placeholder='John'
                     onChange={this.props.handleChange('firstName')}
                     defaultValue={firstName}
-                    />
-                </Form.Field>
-                <Form.Field>
+                        />
+                     </Row>
+                </FormGroup>
+                <FormGroup>
                     <label>Last Name</label>
                     <input placeholder='City'
                     onChange={this.props.handleChange('lastName')}
                     defaultValue={lastName}
                     />
-                </Form.Field>
-                <Form.Field>
+                </FormGroup>
+                <FormGroup>
                     <label>Email</label>
                     <input placeholder='you@domain.com'
                     onChange={this.props.handleChange('email')}
                     defaultValue={email}
                     />
-                </Form.Field>
-                <Form.Field>
+                </FormGroup>
+                <FormGroup>
                     <label>Phone</label>
                     <input placeholder='(123)456-7890'
                     onChange={this.props.handleChange('phone')}
                     defaultValue={phone}
                     />
-                </Form.Field>
+                </FormGroup>
                 <WizardStepNav>    
                     <Button onClick={this.back}>
                         <icon fitted name="arrow left" />
@@ -67,41 +70,41 @@ export class ContactInfo extends Component {
     {clientType === 'company' &&
         <WizardStep Title = {ContactInfoCompany.Title} Header = {ContactInfoCompany.Header} Text = {ContactInfoCompany.Text}>
             <Form>     
-            <Form.Field>
+            <FormGroup>
                     <label>Company Name</label>
                     <input placeholder='Your Company'
                     onChange={this.props.handleChange('companyName')}
                     defaultValue={firstName}
                     />
-                </Form.Field>           
-                <Form.Field>
+                </FormGroup>           
+                <FormGroup>
                     <label>First Name</label>
                     <input placeholder='John'
                     onChange={this.props.handleChange('firstName')}
                     defaultValue={firstName}
                     />
-                </Form.Field>
-                <Form.Field>
+                </FormGroup>
+                <FormGroup>
                     <label>Last Name</label>
                     <input placeholder='City'
                     onChange={this.props.handleChange('lastName')}
                     defaultValue={lastName}
                     />
-                </Form.Field>
-                <Form.Field>
+                </FormGroup>
+                <FormGroup>
                     <label>Email</label>
                     <input placeholder='you@domain.com'
                     onChange={this.props.handleChange('email')}
                     defaultValue={email}
                     />
-                </Form.Field>
-                <Form.Field>
+                </FormGroup>
+                <FormGroup>
                     <label>Phone</label>
                     <input placeholder='(123)456-7890'
                     onChange={this.props.handleChange('phone')}
                     defaultValue={phone}
                     />
-                </Form.Field>
+                </FormGroup>
                 <WizardStepNav>    
                     <Button onClick={this.back}>
                         <icon fitted name="arrow left" />

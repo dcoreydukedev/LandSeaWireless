@@ -1,9 +1,9 @@
-﻿import React, { Component } from 'react';
+﻿// @ts-nocheck
+import React, { Component } from 'react';
 import {ClientType} from './ClientType'
 import { ContactInfo } from './ContactInfo'
-export let  _purchaseOption = 'Buy' | 'Lease';
 
-export default  class MainForm extends Component {
+export default class MainForm extends Component {
     state = {
         step: 1,
         clientType: '',
@@ -18,7 +18,7 @@ export default  class MainForm extends Component {
         zip: '',
         servicePlan: '',
         customerHasRouter: false,
-        routerOption: _purchaseOption,
+        routerOption: '',
         proInstall: true,
         previousIsp: ''
     }
