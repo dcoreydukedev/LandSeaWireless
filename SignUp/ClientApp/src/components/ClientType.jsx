@@ -1,51 +1,68 @@
 import React, { Component } from "react";
 import { SelectClient } from "../modules/Steps.js";
 import { Wizard, WizardStep, WizardStepNav } from "./Wizard";
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-
+import { Button, Form, FormGroup, Label, Input, Container } from "reactstrap";
 export class ClientType extends Component {
+  saveAndContinue = (e) => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
 
-    saveAndContinue = (e) => {
-        e.preventDefault();
-        this.props.nextStep();
-    };
+  back = (e) => {
+    e.preventDefault();
+    this.props.prevStep();
+  };
 
-    back = (e) => {
-        e.preventDefault();
-        this.props.prevStep();
-    };
+  render() {
+    return (
+      <Wizard>
+        <WizardStep
+          Title={SelectClient.Title}
+          Header={SelectClient.Header}
+          Text={SelectClient.Text}
+        >
+          <Form className="form container">
+            <FormGroup className="row">
+              <Label check sm={12}>
+                <Input
+                  className="form-control"
+                  type="radio"
+                  value="person"
+                  name="rbSelectClient"
+                  onClick={this.props.handleChange("clientType")}
+                />{" "}
+                Person
+              </Label>
+            </FormGroup>
 
+            <FormGroup className="row">
+              <Label check sm={12}>
+                <Input
+                  className="form-control"
+                  type="radio"
+                  value="company"
+                  name="rbSelectClient"
+                  onClick={this.props.handleChange("clientType")}
+                />{" "}
+                Company
+              </Label>
+            </FormGroup>
 
-    render() {
-        const { values: { clientType } } = this.props;
-        return (
-            <Wizard>
-                <WizardStep Title={SelectClient.Title} Header={SelectClient.Header} Text={SelectClient.Text}>
-                    <Form>
-                        <FormGroup>
-                            <FormGroup check>
-                                <Label check>
-                                    <Input type="radio" value="person" name="rbSelectClient" onClick={this.props.handleChange('clientType')} />{' '}
-                                        Person
-                                    </Label>
-                            </FormGroup>
-                            <FormGroup check>
-                                <Label check>
-                                    <Input type="radio" value="company" name="rbSelectClient" onClick={this.props.handleChange('clientType')} />{' '}
-                                        Company
-                                    </Label>
-                            </FormGroup>
-                    </FormGroup>
-                        <WizardStepNav>
-                            <Button className="wizard_step_nav" onClick={this.saveAndContinue}>
-                                Next
-                    </Button>
-                        </WizardStepNav>
-                    </Form>
-                </WizardStep>
-            </Wizard>
-        );
-    }
+            <WizardStepNav>
+              <Container row>
+                <Button
+                  onClick={this.saveAndContinue}
+                  className="btn btn-primary"
+                >
+                  Next
+                </Button>
+              </Container>
+            </WizardStepNav>
+          </Form>
+        </WizardStep>
+      </Wizard>
+    );
+  }
 }
 
 export default ClientType;

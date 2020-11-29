@@ -50,7 +50,12 @@ namespace SignUp
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
-            app.UseRouting();
+            app.UseCors(builder =>
+              builder.WithOrigins("http://localhost:2500")
+             .AllowAnyMethod()
+             .AllowCredentials());
+
+            app.UseRouting();          
 
             app.UseEndpoints(endpoints =>
             {
@@ -68,6 +73,7 @@ namespace SignUp
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+            
         }
     }
 }

@@ -23,7 +23,7 @@ export const ContactInfoCompany = {
            head of the household or a person in the household of legal age who wishes to sign up for the service. This 
            information will be used to contact you and to recognize you as a client in our system.`
 };
-export const InstallAddress = {
+export const InstallationAddress = {
     Title: 'Step 3: Provide the Physical Address of the Service',
     Header: 'Why are we asking this?',
     Text: `In order to create your wireless internet service account, we must know your physical address,

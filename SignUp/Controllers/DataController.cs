@@ -12,6 +12,9 @@ using SignUp.Services;
 
 namespace SignUp.Controllers
 {
+    /// <summary>
+    /// Controller to handle json data between client and server
+    /// </summary>
     [ApiController]
     [Route("Data")]
     public class DataController : Controller
@@ -20,6 +23,10 @@ namespace SignUp.Controllers
 
         private readonly ILogger<DataController> _logger;
 
+        /// <summary>
+        /// Logger
+        /// </summary>
+        /// <param name="logger"></param>
         public DataController(ILogger<DataController> logger)
         {
             _logger = logger;
@@ -27,7 +34,11 @@ namespace SignUp.Controllers
 
        
 
-
+        /// <summary>
+        /// Accept Data from the client app, process, call service to send post and return response, return response to client
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("/CreateClient")]
         public async Task<JsonResult> CreateClient([FromBody] CreateClientWizardData data)

@@ -11,6 +11,10 @@
     <Product>Land Sea Wireless SiguUp Application</Product>
     <RepositoryUrl>https://github.com/dcoreydukedev/LandSeaWireless</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <Copyright>2020 - Land Sea Wireless, LLC</Copyright>
+    <PackageTags>react, ubiquity</PackageTags>
+    <AnalysisLevel>5.0</AnalysisLevel>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +31,28 @@
 
   <ItemGroup>
     <None Remove="ClientApp\.gitignore" />
+    <None Remove="ClientApp\public\assets\images\android-chrome-192x192.png" />
+    <None Remove="ClientApp\public\assets\images\android-chrome-512x512.png" />
+    <None Remove="ClientApp\public\assets\images\apple-touch-icon.png" />
+    <None Remove="ClientApp\public\assets\images\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\public\assets\images\android-chrome-192x192.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\public\assets\images\android-chrome-512x512.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\public\assets\images\apple-touch-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientApp\public\assets\images\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -69,6 +95,11 @@
     <TypeScriptSourceMap>True</TypeScriptSourceMap>
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <FileAlignment>8192</FileAlignment>
   </PropertyGroup>
 
 </Project>
