@@ -16,9 +16,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "BROWSER": "none",
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "REACT_APP_API_URL": "http://localhost:2500"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "SignUp": {

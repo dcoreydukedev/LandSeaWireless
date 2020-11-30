@@ -2,15 +2,12 @@ import React, { Component } from "react";
 import { SelectClient } from "../modules/Steps.js";
 import { Wizard, WizardStep, WizardStepNav } from "./Wizard";
 import { Button, Form, FormGroup, Label, Input, Container } from "reactstrap";
+
 export class ClientType extends Component {
+  // Save and Continue
   saveAndContinue = (e) => {
     e.preventDefault();
     this.props.nextStep();
-  };
-
-  back = (e) => {
-    e.preventDefault();
-    this.props.prevStep();
   };
 
   render() {

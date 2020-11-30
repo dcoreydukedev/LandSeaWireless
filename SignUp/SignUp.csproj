@@ -15,6 +15,7 @@
     <PackageTags>react, ubiquity</PackageTags>
     <AnalysisLevel>5.0</AnalysisLevel>
     <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <UserSecretsId>58c208a4-c55c-4f68-a13f-81f7a2261f0d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

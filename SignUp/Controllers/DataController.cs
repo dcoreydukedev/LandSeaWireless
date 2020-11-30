@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using SignUp.Models.UNMS;
 using SignUp.Models.Domain;
 using SignUp.Services;
+using System.Collections.Generic;
 
 namespace SignUp.Controllers
 {
@@ -32,7 +33,52 @@ namespace SignUp.Controllers
             _logger = logger;
         }
 
-       
+        [HttpGet]
+        [Route("/ServicePlans")]
+        public async Task<ActionResult<IEnumerable<ServicePlanDTO>>> ServicePlans()
+        {
+            UNMSDataService svc = new UNMSDataService();
+            List<ServicePlanDTO> ret = new List<ServicePlanDTO>();
+            try
+            {
+                List<ServicePlan> spl = await svc.GetServicePlans();
+                foreach (ServicePlan sp in spl)
+                {
+                    ServicePlanDTO servicePlanDTO = new ServicePlanDTO();
+                    servicePlanDTO.Id = sp.Id;
+                    servicePlanDTO.ServicePlanType = sp.ServicePlanType;
+                    servicePlanDTO.Name = sp.Name;
+                    servicePlanDTO.DownloadSpeed = sp.DownloadSpeed;
+                    servicePlanDTO.UploadSpeed = sp.UploadSpeed;
+                    servicePlanDTO.PricePerMonth = (double)sp.Periods[0].Price;
+                }
+                return ret;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+           
+        }
+
+        [HttpGet]
+        [Route("/Products")]
+        public async Task<IActionResult> Products()
+        {
+            UNMSDataService svc = new UNMSDataService();
+            List<Product> ret = new List<Product>();
+            try
+            {
+                List<Product> pl = await svc.GetProducts();
+                return Ok(ret);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+
+        }
+
 
         /// <summary>
         /// Accept Data from the client app, process, call service to send post and return response, return response to client

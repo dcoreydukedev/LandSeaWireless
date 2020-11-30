@@ -1,8 +1,10 @@
 /* wizard.css - for wizard component styles */
 
 /* ----- Containers ----- */
-*{
-    margin-bottom:0px;
+* {
+    margin-bottom: 0px;
+    color: rgba(5, 5, 5, 0.92);
+    font-family: 'Open Sans', sans-serif;
 }
 .wizard_container{
     width:92%;
@@ -45,10 +47,9 @@
 /* ----- Wrappers ----- */
 
 /* -- Defaults for Wizard Components -- */
-.wizard_wrapper{
-   
+.wizard_wrapper {
     font-weight: 500;
-    
+    color: rgba(5, 5, 5, 0.92);
     letter-spacing: normal;
     font-size: 14px; /*Set Base Font Size for Wizard (1em = 14) */
 }
@@ -109,6 +110,7 @@
     margin:2px auto;
     padding:2px;
     text-align:left;
+    color:rgba(5, 5, 5, 0.92);
 }
 /* ----- End Wizard Step Title Elements ----- */
 
@@ -116,9 +118,9 @@
 .wizard_step_info_header { /* h2 */
     width: 88%;
     text-align: left;
-    margin:.25rem auto;
-    font-size:1.0em;
-   
+    margin: .25rem auto;
+    font-size: 1.0em;
+    color: rgba(5, 5, 5, 0.88);
 }
 .wizard_step_info_p { /* p */
     width: 88%;
@@ -126,7 +128,7 @@
     padding-left: 0%;
     margin: 1%;
     font-size: 0.85em;
-    
+    color: rgba(5, 5, 5, 0.75);
 }
 /* ----- End Wizard Step Info Elements ----- */
 
@@ -134,7 +136,9 @@
 
 .form-control {
     margin-bottom: .25rem;
+    color: rgba(5, 5, 5, 0.88);
 }
+
 
 .val {
     font-size: .67rem;
@@ -148,7 +152,7 @@
 
 .info {
     font-size: .67rem;
-    color: rgba(234, 234, 234, 0.75);
+    color: rgba(5, 5, 5, 0.75);
     padding: 1px;
     margin: .50rem 0px;
     width:98%;
@@ -162,6 +166,30 @@
 .highlight-yellow {
     border: 1px solid yellow !important;
 }
+
+/* Label for Finish Step */
+.finish-label {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px;
+    width: 98%;
+    text-align: left;
+}
+.finish-info {
+    font-size: 1.1rem;
+    color: rgba(0, 254, 0, 0.75);
+    padding: 1px;
+    width: 98%;
+    text-align: left;
+}
+.finish-req {
+    font-size: 1.1rem;
+    color: rgba(254, 0, 0, 0.75);
+    padding: 1px;
+    width: 98%;
+    text-align: left;
+}
+/* End Label for Finish Step */
 
 /* ----- End Wizard Step Content Elements ----- */
 

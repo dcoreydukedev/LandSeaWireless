@@ -50,11 +50,6 @@ namespace SignUp
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
-            app.UseCors(builder =>
-              builder.WithOrigins("http://localhost:2500")
-             .AllowAnyMethod()
-             .AllowCredentials());
-
             app.UseRouting();          
 
             app.UseEndpoints(endpoints =>

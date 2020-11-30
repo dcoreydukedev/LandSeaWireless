@@ -8,7 +8,6 @@ import {
   Form,
   FormGroup,
   Label,
-  Col,
   Container,
   Input,
 } from "reactstrap";
@@ -26,7 +25,16 @@ export class ContactInfo extends Component {
 
   render() {
     const {
-      values: { clientType, firstName, lastName, companyName, email, phone },
+      values: {
+        clientType,
+        firstName,
+        lastName,
+        companyName,
+        email,
+        phone,
+        formIsValid,
+        errors,
+      },
     } = this.props;
     return (
       <Wizard>
@@ -65,6 +73,7 @@ export class ContactInfo extends Component {
                   placeholder="you@domain.com"
                   onChange={this.props.handleChange("email")}
                   defaultValue={email}
+                  type="email"
                 />
               </FormGroup>
               <FormGroup row>
@@ -72,7 +81,7 @@ export class ContactInfo extends Component {
                 <Input
                   className="form-control"
                   sm={8}
-                  placeholder="(123)456-7890"
+                  placeholder="(123) 456-7890"
                   onChange={this.props.handleChange("phone")}
                   defaultValue={phone}
                 />
@@ -139,6 +148,7 @@ export class ContactInfo extends Component {
                   placeholder="you@domain.com"
                   onChange={this.props.handleChange("email")}
                   defaultValue={email}
+                  type="email"
                 />
               </FormGroup>
               <FormGroup row>
@@ -146,7 +156,7 @@ export class ContactInfo extends Component {
                 <Input
                   className="form-control"
                   sm={8}
-                  placeholder="(123)456-7890"
+                  placeholder="(123) 456-7890"
                   onChange={this.props.handleChange("phone")}
                   defaultValue={phone}
                 />

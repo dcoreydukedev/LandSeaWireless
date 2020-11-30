@@ -61,11 +61,12 @@ export class InstallAddress extends Component {
               <Label sm={2}>State</Label>
               <Input
                 sm={10}
-                clannName="form-Control"
+                className="form-Control"
                 type="select"
                 onChange={this.props.handleChange("state")}
                 defaultValue={state}
               >
+                <option value="0">-- Please Select --</option>
                 <option value="1">Alabama (AL)</option>
                 <option value="2">Alaska (AK)</option>
                 <option value="3">Arizona (AZ)</option>
