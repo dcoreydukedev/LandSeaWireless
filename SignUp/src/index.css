@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgba(5, 5, 5, 0.99);
+  letter-spacing: normal;
+  font-size: 14px; /*Set Base Font Size for App (1em = 14) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(192, 192, 192);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(192, 192, 192, 1) 0%,
+    rgba(224, 224, 224, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(192, 192, 192, 1) 0%,
+    rgba(224, 224, 224, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(192, 192, 192, 1) 0%,
+    rgba(224, 224, 224, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0c0c0",endColorstr="#ffffff",GradientType=1);
+  z-index: 0;
+}

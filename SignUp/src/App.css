@@ -1,0 +1,48 @@
+/* ----- Wrappers ----- */
+
+.wrapper{
+  width:100%;
+  height:auto;
+  margin:0px;
+  border:none;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.app_wrapper{  
+  padding:1em;
+  z-index:1;
+}
+
+/* ----- End Wrappers ----- */
+
+.logo {
+  height: 4rem;
+  width:8rem;
+  pointer-events: none;
+  float:left;
+}
+
+
+
+.header{
+  background-color:transparent;
+  z-index:2;
+  height:auto;
+  width:96%; margin:1rem auto 5rem auto;
+  padding:1.25rem;
+  text-align: center;
+}
+.header div
+
+.link, .link:active, .link:link, .link:visited, .link:hover {
+  color:rgba(25, 25, 255, 0.97);; text-decoration:none; font-size:1.25rem; float:right;
+}
+/* ----- Elements ----- */
+
+.element{
+    border: none
+}
+
+/* ----- End Elements ----- */
+
