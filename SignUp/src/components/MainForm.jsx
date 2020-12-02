@@ -6,6 +6,7 @@ import { PreviousIsp } from "./PreviousIsp";
 import { ServicePlan } from "./ServicePlan";
 import { Finish } from "./Finish";
 import axios from "axios";
+import * as val from '../modules/RegexValidation.js';
 
 
 export default class MainForm extends Component {
@@ -42,9 +43,9 @@ export default class MainForm extends Component {
 
   submit = () => {
     if (
-      this.state.firstName !== "" &&
-      this.state.lastName !== "" &&
-      this.state.email !== "" &&
+        this.state.firstName !== "" &&
+        this.state.lastName !== "" &&
+        (this.state.email !== "" && val.ValidateEmail(this.state.email)) &&
       this.state.phone !== "" &&
       this.state.address !== "" &&
       this.state.city !== "" &&
@@ -119,15 +120,18 @@ export default class MainForm extends Component {
     axios
       .post("https://landsea.unmsapp.com/api/v1.0/clients", body, { headers })
       .then((res) => {
-        console.log(res);
-        console.log(res.data);
-      });
-    let user_message =
-      "Congrats! You Have Successfully Created a New Lead! Someone will contact you very soon! This page will redirect in 5 seconds.";
-    this.setState({ userMessage: user_message });
-    setTimeout(function () {
-      window.location.href = "http://landseawireless.com";
-    }, 5000);
+        let user_message =
+            "Congrats! You Have Successfully Created a New Lead! Someone will contact you very soon! This page will redirect in 5 seconds.";
+        this.setState({ userMessage: user_message });
+        setTimeout(function () {
+          window.location.href = "http://landseawireless.com";
+        }, 5000);
+      }).catch((error) => {
+      let user_message =
+          "An Error Occurred While Attempting to process your request. Please Review Your Submitted Data and Try Again!. If the problem persists, please contact us. http://landseawireless.com";
+      this.setState({ userMessage: user_message });
+    });
+    
   }
 
   nextStep = () => {
