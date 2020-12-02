@@ -16,7 +16,6 @@
     ],
     "lang": "en-US",
     "name": "LandSeaWirelessSignUp",
-    "orientation": "portrait-primary",
     "scope": "/public/",
     "short_name": "SignUp",
     "start_url": "index.html",
