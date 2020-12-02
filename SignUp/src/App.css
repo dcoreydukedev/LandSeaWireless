@@ -1,9 +1,8 @@
-/* ----- Wrappers ----- */
 
 .wrapper{
   width:100%;
   height:auto;
-  margin:0px;
+  margin:0;
   border:none;
   text-align:center;
   vertical-align:middle;
@@ -14,16 +13,12 @@
   z-index:1;
 }
 
-/* ----- End Wrappers ----- */
-
 .logo {
   height: 4rem;
   width:8rem;
   pointer-events: none;
   float:left;
 }
-
-
 
 .header{
   background-color:transparent;
@@ -33,16 +28,14 @@
   padding:1.25rem;
   text-align: center;
 }
-.header div
 
 .link, .link:active, .link:link, .link:visited, .link:hover {
-  color:rgba(25, 25, 255, 0.97);; text-decoration:none; font-size:1.25rem; float:right;
+  color:rgba(25, 25, 255, 0.97);
+  text-decoration:none;
+  font-size:1.25rem;
+  float:right;
 }
-/* ----- Elements ----- */
 
 .element{
     border: none
 }
-
-/* ----- End Elements ----- */
-

@@ -40,11 +40,3 @@ export const FinishStep = {
     Text: '',    
 };
 
-export const IspOptions = [
-    'Dial-Up',
-    'Cable',
-    'DSL',
-    'Cellular',
-    'Fiber',
-    'Satellite'
-];
