@@ -31,8 +31,7 @@ export default class MainForm extends Component {
     // Get Service Plans
     const headers = {
       "Content-Type": "application/json",
-      "X-Auth-Token":
-        "UZxARMrUaIZebtYe2UvBXpgdDVI316+xLDAqE1V1yW4cDC/2zLOjnk8nwZHf0TIE",
+      "X-Auth-Token": "UZxARMrUaIZebtYe2UvBXpgdDVI316+xLDAqE1V1yW4cDC/2zLOjnk8nwZHf0TIE",
     };
     axios
       .get("https://landsea.unmsapp.com/api/v1.0/service-plans", { headers })
@@ -70,7 +69,7 @@ export default class MainForm extends Component {
   postLead() {
     let client_type = this.state.clientType === "person" ? 1 : 2;
 
-    var body = {
+    let body = {
       userIdent: this.state.firstName + this.state.lastName + Date.now(),
       previousIsp: this.state.previousIsp.trim(),
       isLead: true,
@@ -115,8 +114,7 @@ export default class MainForm extends Component {
     // Post Data
     const headers = {
       "Content-Type": "application/json",
-      "X-Auth-Token":
-        "x2bhjw7IuHJqo+Z1wbcjGUacK9rFbpHEdmrlxC0ju3pj6a4rKPQEsFJQslz+3fFG",
+      "X-Auth-Token": "x2bhjw7IuHJqo+Z1wbcjGUacK9rFbpHEdmrlxC0ju3pj6a4rKPQEsFJQslz+3fFG",
     };
     axios
       .post("https://landsea.unmsapp.com/api/v1.0/clients", body, { headers })
@@ -128,7 +126,7 @@ export default class MainForm extends Component {
       "Congrats! You Have Successfully Created a New Lead! Someone will contact you very soon! This page will redirect in 5 seconds.";
     this.setState({ userMessage: user_message });
     setTimeout(function () {
-      window.location.href = "http://www.landseawireless.com";
+      window.location.href = "http://landseawireless.com";
     }, 5000);
   }
 
