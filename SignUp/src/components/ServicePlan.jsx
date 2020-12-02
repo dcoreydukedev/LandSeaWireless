@@ -18,6 +18,8 @@ export class ServicePlan extends Component {
 
   style = {
     textAlign: "left",
+    width:'98%',
+    border:'none'
   };
 
   render() {
@@ -32,20 +34,22 @@ export class ServicePlan extends Component {
           Header={ServicePlanStep.Header}
           Text={ServicePlanStep.Text}
         >
-          <Form.Group controlId="wizard.servicePlan">
+          
             {sp.map((p, i) => (
-              <Form.Check
-                key={p.Id}
-                style={this.style}
-                className="form-control mb3"
-                type="checkbox"
-                value={p.name}
-                name={p.name}
-                label={p.name + " | " + p.periods[0].price + "/mo."}
-                onChange={this.props.handleChange("servicePlan")}
-              />
+              <Form.Group controlId={("wizard.servicePlan") + i} style={this.style}>
+                <Form.Check
+                 style={this.style}
+                  key={p.Id}               
+                  className="form-control mb3 cdl font-smaller"
+                  type="checkbox"
+                  value={p.name}
+                  name={p.name}    
+                  label= {p.name + " | " + p.periods[0].price + "/mo."}          
+                  onChange={this.props.handleChange("servicePlan")}
+                />
+              </Form.Group>
             ))}
-          </Form.Group>
+         
 
           <WizardStepNav>
             <Button

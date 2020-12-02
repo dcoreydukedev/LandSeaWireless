@@ -129,6 +129,14 @@
     content: "\a";
     white-space: pre;
 }
+.cbl{
+    font-size:.45rem;
+    color:red!important;
+}
+.cbl::after{
+    content: "\a";
+    white-space: pre;
+}
 
 .val {
     font-size: .67rem;
