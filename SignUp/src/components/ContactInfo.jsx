@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// @ts-nocheck
 import React, { Component } from "react";
 import { ContactInfoPerson } from "../modules/Steps.js";
 import { Wizard, WizardStep, WizardStepNav } from "./Wizard";

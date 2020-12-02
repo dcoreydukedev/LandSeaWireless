@@ -1,4 +1,3 @@
-﻿// @ts-nocheck
 import React, { Component } from "react";
 import { ClientType } from "./ClientType";
 import { ContactInfo } from "./ContactInfo";

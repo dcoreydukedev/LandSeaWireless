@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import '../wizard.css';
 import Container from 'react-bootstrap/Container';
