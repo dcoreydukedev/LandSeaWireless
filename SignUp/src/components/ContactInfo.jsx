@@ -16,10 +16,8 @@ export class ContactInfo extends Component {
     this.props.prevStep();
   };
 
-  style = {
-    width:'75%',
-    textAlign:'left',
-    paddingLeft:'15rem'
+  style = {    
+    textAlign:'left'   
   }
 
   render() {

@@ -6,6 +6,7 @@ import { PreviousIsp } from "./PreviousIsp";
 import { ServicePlan } from "./ServicePlan";
 import { Finish } from "./Finish";
 import axios from "axios";
+import { Wizard } from "./Wizard";
 
 export default class MainForm extends Component {
   state = {
@@ -23,7 +24,7 @@ export default class MainForm extends Component {
     servicePlan: "",
     previousIsp: "",
     servicePlans: [],
-    userMessage: ''
+    userMessage: "",
   };
 
   componentDidMount() {
@@ -54,62 +55,62 @@ export default class MainForm extends Component {
     ) {
       if (this.state.clientType === "person") {
         this.postLead();
-      } 
-      else if (this.state.clientType === "company") {
-        if(this.state.companyName !== ''){
-          this.postLead()
-        }
-        else{
-          alert('Please fix form errors!');
+      } else if (this.state.clientType === "company") {
+        if (this.state.companyName !== "") {
+          this.postLead();
+        } else {
+          alert("Please fix form errors!");
         }
       }
-    }
-    else{
-      alert('Please fix form errors!');
+    } else {
+      alert("Please fix form errors!");
     }
   };
 
-  postLead(){
-    let client_type = (this.state.clientType === 'person') ? 1 : 2;
+  postLead() {
+    let client_type = this.state.clientType === "person" ? 1 : 2;
 
     var body = {
-      'userIdent': this.state.firstName + this.state.lastName + Date.now(),
-      'previousIsp': this.state.previousIsp.trim(),
-      'isLead': true,
-      'clientType': client_type,
-      'companyName': (this.state.clientType === 'person') ? '' : this.state.companyName,
-      'companyContactFirstName': (this.state.clientType === 'person') ? '' : this.state.firstName,
-      'companyContactLastName': (this.state.clientType === 'person') ? '' : this.state.lastName,
-      'firstName': this.state.firstName,
-      'lastName': this.state.lastName,
-      'street1': this.state.address,
-      'city': this.state.city,
-      'countryId': 249,
-      'stateId': Number(this.state.state),
-      'zipCode': this.state.zip,
-      'invoiceStreet1': this.state.address,   
-      'invoiceCity': this.state.city,
-      'invoiceStateId': Number(this.state.state),
-      'invoiceCountryId': 249,
-      'invoiceZipCode': this.state.zip,
-      'invoiceAddressSameAsContact': true,
-      'note': 'Service Plan: ' + this.state.servicePlan,
-      'sendInvoiceByPost': false,
-      'organizationId': 1,
-      'contacts': [
+      userIdent: this.state.firstName + this.state.lastName + Date.now(),
+      previousIsp: this.state.previousIsp.trim(),
+      isLead: true,
+      clientType: client_type,
+      companyName:
+        this.state.clientType === "person" ? "" : this.state.companyName,
+      companyContactFirstName:
+        this.state.clientType === "person" ? "" : this.state.firstName,
+      companyContactLastName:
+        this.state.clientType === "person" ? "" : this.state.lastName,
+      firstName: this.state.firstName,
+      lastName: this.state.lastName,
+      street1: this.state.address,
+      city: this.state.city,
+      countryId: 249,
+      stateId: Number(this.state.state),
+      zipCode: this.state.zip,
+      invoiceStreet1: this.state.address,
+      invoiceCity: this.state.city,
+      invoiceStateId: Number(this.state.state),
+      invoiceCountryId: 249,
+      invoiceZipCode: this.state.zip,
+      invoiceAddressSameAsContact: true,
+      note: "Service Plan: " + this.state.servicePlan,
+      sendInvoiceByPost: false,
+      organizationId: 1,
+      contacts: [
         {
-          'email': this.state.email,
-          'phone': this.state.phone,
-          'name': this.state.firstName + ' ' + this.state.lastName,
-          'isBilling': true,
-          'isContact': true,
-          'types': [
+          email: this.state.email,
+          phone: this.state.phone,
+          name: this.state.firstName + " " + this.state.lastName,
+          isBilling: true,
+          isContact: true,
+          types: [
             {
-              'name': 'Home contact'
-            }
-          ]
-        }
-      ]
+              name: "Home contact",
+            },
+          ],
+        },
+      ],
     };
     // Post Data
     const headers = {
@@ -123,9 +124,12 @@ export default class MainForm extends Component {
         console.log(res);
         console.log(res.data);
       });
-    let user_message = 'Congrats! You Have Successfully Created a New Lead! Someone will contact you very soon! This page will redirect in 5 seconds.';
-    this.setState({userMessage: user_message});
-    setTimeout(function(){window.location.href = 'http://www.landseawireless.com'}, 5000);
+    let user_message =
+      "Congrats! You Have Successfully Created a New Lead! Someone will contact you very soon! This page will redirect in 5 seconds.";
+    this.setState({ userMessage: user_message });
+    setTimeout(function () {
+      window.location.href = "http://www.landseawireless.com";
+    }, 5000);
   }
 
   nextStep = () => {
@@ -179,8 +183,9 @@ export default class MainForm extends Component {
       servicePlan,
       previousIsp,
       servicePlans,
-      userMessage
+      userMessage,
     };
+
     switch (step) {
       case 1:
         return (

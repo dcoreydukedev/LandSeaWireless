@@ -21,7 +21,7 @@ export const WizardStep = (props) => {
                <WizardStepTitle Title={props.Title} />
                <WizardStepInfo Header = {props.Header} Text = {props.Text}/>
                <WizardStepContent>
-                    <Form className="pl5">
+                    <Form>
                         {props.children}
                     </Form>
                </WizardStepContent>             

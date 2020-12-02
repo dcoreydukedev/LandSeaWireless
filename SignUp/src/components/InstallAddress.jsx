@@ -17,9 +17,7 @@ export class InstallAddress extends Component {
   };
 
   style = {
-    width:'75%',
-    textAlign:'left',
-    paddingLeft:'15rem'
+    textAlign:'left'
   }
 
   render() {

@@ -12,11 +12,11 @@ export class ClientType extends Component {
     this.props.nextStep();
   };
 
+
   style = {
     border:'none',
-    width:'75%',
     textAlign:'left',
-    paddingLeft:'15rem'
+    marginBottom:'1rem'
   }
 
   render() {
@@ -27,6 +27,9 @@ export class ClientType extends Component {
           Header={SelectClient.Header}
           Text={SelectClient.Text}
         >
+          
+         
+
           <Form.Group controlId="wizard.clientType">
             <Form.Check 
               style={this.style}
@@ -37,6 +40,7 @@ export class ClientType extends Component {
               label="Residential User"
               onClick={this.props.handleChange("clientType")}
             />
+            
 
             <Form.Check 
               style={this.style}
@@ -48,7 +52,7 @@ export class ClientType extends Component {
               onClick={this.props.handleChange("clientType")}
             />
           </Form.Group>
-
+          
           <WizardStepNav>
             <Button
               onClick={this.saveAndContinue}

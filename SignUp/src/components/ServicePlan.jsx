@@ -17,10 +17,7 @@ export class ServicePlan extends Component {
   };
 
   style = {
-    border: "none",
-    width: "75%",
     textAlign: "left",
-    paddingLeft: "15rem",
   };
 
   render() {
